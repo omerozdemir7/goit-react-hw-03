@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:gh": "vite build --base=/goit-react-hw-03/",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist -b gh-pages",
-    "update": "npm run build && npm run deploy && git add . && git commit -m \"update\" && git push"
+    "update": "npm run build:gh && npm run deploy && git add . && git commit -m \"update\" && git push"
   },
   "dependencies": {
     "formik": "^2.4.9",

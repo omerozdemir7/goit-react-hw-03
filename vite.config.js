@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/goit-react-hw-03/',
+  // Default base is '/' (good for Vercel). Override via CLI/env for GitHub Pages.
+  base: '/',
 })
